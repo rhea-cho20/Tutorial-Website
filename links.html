@@ -1,0 +1,71 @@
+<html> 
+<head>
+<style>
+body{
+                background-color:rgb(90,186,201);
+           }
+</style>
+ </head>
+<img src="logo.jpg" height="175" width="250" usemap="#lg"  alt="Map not loading"/>
+<map name="lg">
+<area shape=circle coords="64,110,30" href="frame.html" target="_blank">
+</map>
+<p style="font-size:15px;color:navy;font-weigth:bold;font-family:Lucida Handwriting;"> Courses </p>
+<form>
+
+
+<select id="c1" name="choices">
+<option >Computer Science </option>
+<option >Information Technology(IT) </option>
+<option >Biotech </option>
+</select>
+
+<input type="button" value="GO"  onclick="assigncrse()"/> <br><br>
+<script>
+
+function assigncrse()
+{
+var sel=document.getElementById("c1").value
+
+switch(sel)
+{ 
+
+   default:document.write("nothing");
+    break;	
+   case "Computer Science":
+            window.open("CS.html");
+            break;
+  case "Information Technology(IT)":
+            window.open("IT.html");	
+            break;
+  case "Biotech":
+            window.open("BT.html");	
+            break;  
+   
+}
+
+
+}
+
+</script>
+
+
+
+
+<a style="font-size:20px;color:navy;font-family:Lucida Handwriting;font-weight:bold;" href="about.html" target="_blank"> ABOUT </a><br><br>
+<a style="font-size:20px;color:navy;font-family:Lucida Handwriting;font-weight:bold;" href="review.html" target="_blank"> Student Reviews </a><br><br>
+<a style="font-size:20px;color:navy;font-family:Lucida Handwriting;font-weight:bold;" href="sign.html" target="_blank"> Sign up/Register </a><br><br>
+<a style="font-size:20px;color:navy;font-family:Lucida Handwriting;font-weight:bold;" href="contact.html"target="_blank"" > Contact us </a>
+<p><b>Subscribe to our newsletter:</b><p>
+Email<input type="text">
+ <input type="button" value="GO" onclick="go()"><br><br>
+<script>
+function go()
+{
+        window.open("news.html");
+}
+</script>
+<pre> Copright @ 2017 CareerAcademy Inc.
+          All rights reserved</pre>
+</form>
+</html>
